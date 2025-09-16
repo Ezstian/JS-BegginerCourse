@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <header>
+        <h2>Galeria ciekawych miejsc</h2>
+    </header>
+    <main>
+    <div id="obraz">
+        <img src="lanzarotte.jpg" alt="lanzarotte">
+    </div>
+    <div id="flex">
+        <div id="lewy">
+        <h3>Przegladaj zdjecia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte">
+        <img src="pekin.jpg" alt="pekin">
+        <img src="serengeti.jpg" alt="serengeti">
+        <img src="wenecja.jpg" alt="wenecja">
+    </div>
+    <div id="prawy">
+        <h3>obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <p>Polub nas <img id="likeIcon" onclick="icon()" src="icon-off.png"> </p>
+            <a href="http://pixabay.pl" target="_blank">Odkryj wiecej zdjec...</a>
+        </table>
+    </div>
+    </div>
+    
+    </main>
+    <footer>
+        Autor: 000000#
+    </footer>
+    
+</body>
+<script>
+function icon(){
+    let iconSrc = document.getElementById('likeIcon').getAttribute("src");
+    console.log(iconSrc);
+    if(iconSrc=="icon-off.png")
+            document.getElementById('likeIcon').setAttribute("src","icon-on.png")
+        else
+            document.getElementById('likeIcon').setAttribute("src","icon-off.png")
+    }
+
+</script>
+</html>
