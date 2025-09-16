@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Style w JS</title>
 </head>
 <body>
-    
+    <header></header>
+    <main>
+        <div id="lewy">
+            <h1>Konf. stylu</h1>
+            <p>Podaj kolor tla</p>
+            <input type="button" value="indigo" id="indigoButton" onclick="backgroundColor('indigo')">
+            <input type="button" value="SteelBlue" id="SteelBlueButton" onclick="backgroundColor('SteelBlue')">
+            <input type="button" value="Olive" id="OliveButton" onclick="backgroundColor('Olive')">
+            <p>Podaj kolor czcionki</p>
+            <select onchange="fontColor()" id="fontColor">
+                <option value="White">White</option>
+                <option value="Tan">Tan</option>
+                <option value="Bisque">Bisque</option>
+                <option value="Plum">Plum</option>
+            </select>
+            <p>Podaj rozmiar czcionki w %</p>
+            <input type="text" value="100%" onblur="fontSize()" id="fontSize">
+            <p>Czy rysunek ma miec ramke</p>
+            <input type="checkbox" checked id="imageBorder" onchange="imageBorder()">Rysuj ramke
+            <p>Jaki typ punktora listy</p>
+            <input onclick="listStyle()" type="radio" name="shape" id="disk" checked>dysk
+            <input onclick="listStyle()" type="radio" name="shape" id="square">kwadrat
+            <input onclick="listStyle()" type="radio" name="shape" id="circle">okrąg
+        </div>
+        <div id="prawy">
+            <img src="gibraltar.jpg" alt="polwysep gibraltarski">
+            <ul>
+                <li>element 1</li>
+                <li>element 2</li>
+                <li>element 3</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam eligendi nulla deleniti non? Inventore impedit provident, voluptatum velit sed obcaecati porro magnam, omnis aspernatur eius minima, tempora non quidem.</p>
+        </div>
+    </main>
+    <footer>
+        Autor: 000000#
+    </footer>
 </body>
 </html>
