@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Color Flipper</title>
-</head>
-<body>
-    <h3>Choose color: </h3>
-    <input type="button" id="magenta" value="#3A86FF" onclick="changeColor('#3A86FF')" >
-    <input type="button" id="pink" value="#FF006E" onclick="changeColor('#FF006E')">
-    <input type="button" id="purple" value="#8338AC" onclick="changeColor('#8338AC')">
-</body>
+  </head>
+  <body>
+    <h3>Choose color:</h3>
+    <div id="left" onclick="changeColor('#3A86FF')">
+      <img src="classic.png" alt="classic" />
+    </div>
+    <div id="middle" onclick="changeColor('#4e3571')">
+      <img src="coconut.png" alt="coconut" />
+    </div>
+    <div id="right" onclick="changeColor('#a8cf8e')">
+      <img src="Figa.png" alt="figa" />
+    </div>
+  </body>
 </html>
